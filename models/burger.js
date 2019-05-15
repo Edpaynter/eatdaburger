@@ -7,7 +7,7 @@ var burger = {
         })
     },
     create: (cols, vals, cb) => {
-        orm.insertOne("burgers", cols, vals, (res) => {
+        orm.insertOne("burgers", cols, vals, res => {
             cb(res);
         });
     },
